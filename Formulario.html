@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE-edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Formulário de Sobrenomes</title>
+	<style>
+		body{
+			font-family: Andale Mono, monospace;
+			background-image: linear-gradient(45deg, DeepSkyBlue, PaleTurquoise);
+		
+		}
+		.box{
+			background-color: rgba(0, 0, 0, 0.8);
+			position: absolute;
+			top: 50%;
+			left:50%;
+			transform: translate(-50%,-50%);
+			padding: 50px;
+			border-radius: 10% 0;
+			box-shadow: 1px 2px 10px #000;
+			color: white;
+			width: responsive;
+			zoom: 70%
+		}
+		fieldset{
+			border: 3px solid DeepSkyBlue;
+			padding: 20px;
+		}
+		legend{
+			border: 1px solid DeepSkyBlue;
+			padding: 5px;
+			text-align: center;
+			font-size: 25px;
+			border-radius: 8px;
+		}
+		.inputBox{
+			position: relative;
+			
+		}
+		.inputUser{
+			backgroud: none;
+			border: none;
+			border-buttom: 1px solid white;
+			outline: none;
+			color: white;
+			font-size: 15px;
+			width: 100%;
+			letter-spacing: 2px;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<form action="">
+			<fieldset>
+				<legend><b>Formulário de Sobrenomes</b></legend>
+				<br>			
+				<div class="inputBox">
+					<input type="text" name="nome" id="nome" class="inputUser" required>
+					<label for="nome">Nome</label>
+				</div>
+				<br><br>
+				<div class="inputBox">
+					<input type="text" name="sobrenome" id="sobrenome" class="inputUser" required>
+					<label for="nome">Sobrenome</label>
+				</div>
+				<br><br>
+				<div class="inputBox">
+					<input type="text" name="região" id="região" class="inputUser" required>
+					<label for="nome">Região</label>
+				</div>
+				<br><br>
+				<div class="inputBox">
+					<input type="text" name="Cidade" id="Cidade" class="inputUser" required>
+					<label for="nome">Cidade</label>
+				</div>
+				<br><br>
+				<div class="inputBox">
+					<input type="text" name="Comune" id="Comune" class="inputUser" required>
+					<label for="nome">Comune</label>
+				</div>
+				<br><br>
+				<div class="inputBox">
+				<label for="datanasc">Data de Nascimento</label>
+				<input type="date" name="datanasc" id="datanasc" class="inputUser" required>
+				<br><br>
+				<p>Já possui requerente com cidadania?</p>
+				<input type="radio" name="sim" value="sim" required>
+				<label for="sim">Sim</label>
+				<input type="radio" name="não" value="não" required>
+				<label for="não">Não</label>
+				<br><br>
+				<div class="inputBox">
+					<input type="text" name="Observação" id="Observação" class="inputUser" required>
+					<label for="nome">Observação</label>
+				</div>
+				<br><br>
+				<input type="submit" name="submit" id="submit">
+			</fieldset>
+		</form>
+	</div>
+</body>
+</html>
